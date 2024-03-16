@@ -1,0 +1,14 @@
+public class LibrosDeTextoAntonioJoseCamacho extends LibrosDeTexto {
+    private String facultad;
+
+    public LibrosDeTextoAntonioJoseCamacho(String titulo, String autor, String curso, String facultad) {
+        super(titulo, autor, curso);
+        this.facultad = facultad;
+    }
+
+    @Override
+    public void imprimirInfo() {
+        super.imprimirInfo();
+        System.out.println("Facultad: " + facultad);
+    }
+}
